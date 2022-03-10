@@ -1,0 +1,26 @@
+{
+  "name": "slutprojekt-native-javascript",
+  "version": "1.0.0",
+  "description": "Star wars catalog",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonP1342/slutprojekt-native-javascript.git"
+  },
+  "keywords": [
+    "Star",
+    "Wars"
+  ],
+  "author": "Anton & Celina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonP1342/slutprojekt-native-javascript/issues"
+  },
+  "homepage": "https://github.com/AntonP1342/slutprojekt-native-javascript#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}

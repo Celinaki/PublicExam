@@ -1,0 +1,258 @@
+
+/* färger lul
+Mörk grå: #535556
+Gul: #FFD600
+Details header: #748687
+Grå: #8E8E8E
+Ljusgrå: #C4C4C4
+Ljusare grå: #E1DEDE
+Highlightgrå: #444444 
+*/
+
+
+body{
+    background-color: #131313;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: 0.2rem;
+}
+img{
+    position: relative;
+}
+header h1{
+    position: absolute;
+    top:5%;
+    margin-left: 5rem;
+    width: 25rem;
+    letter-spacing: 0.6rem;
+    font-size: 58px;
+    font-weight: 100;
+}
+h1, h2{
+    color: #FFD600;
+}
+header{
+   display: flex;
+   align-items: flex-end;
+}
+
+main{
+    background-color: #424242;
+    height: 70vh;
+    width: 1440px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    transform: translateY(-8%);
+    height: 105%;
+}
+
+
+h2{
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1rem 0;
+    margin: 0;
+}
+.character h2{
+    background-color: rgb(83 85 86);
+}
+
+.character-wrapper{
+    margin: 0;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.character-wrapper > * {
+    height: 16.6666%;
+    display: flex;
+    align-items: center;
+}
+.character-wrapper p {
+   margin: 0; 
+   padding-left: 1rem;
+   font-size: 22px;
+   transition: padding 0.5s, box-shadow 0.5s;
+
+}
+
+.character-wrapper > p:nth-child(odd){
+    background-color: #8E8E8E;
+    color: white;
+}
+.character-wrapper > p:nth-child(even){
+    background-color: #E1DEDE;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 26px;
+}
+.wrapper p{
+    margin: 0;
+}
+
+.details h2{
+    background-color: #748687;
+}
+.details section{
+    
+    height: 50%;
+    width: 100%;
+}
+.fas{
+    cursor: pointer;
+
+}
+
+.details > section:first-of-type{
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.details > section:last-of-type{
+    background-color: #8E8E8E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details section h3{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem
+}
+
+.details section p{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    padding-left: 1rem;
+}
+
+.character-active{
+    padding-left: 4rem !important;
+    background-color: #444444 !important;
+    color: white;
+}
+.character, .details section:first-of-type, .details section:last-of-type{
+    position: relative;
+}
+.loading-icon {
+    position: absolute;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.loaded-char:hover {
+    padding-left: 4rem;
+    cursor: pointer;
+    box-shadow: 0px -25px 25px -14px rgb(207, 207, 154) inset;
+    /* box-shadow: 0px 10px 20px 1px yellow; */
+    z-index: 100;
+    /* animation: movetext 1s ease-out; */
+}
+
+@keyframes movetext {
+    0% {padding-left: 8rem;}
+    100% {padding-left: 1rem;}
+}
+
+.icon1{
+    top:41%
+    
+}
+.icon2{
+    top: 40%;
+    left: 42%
+}
+.icon3{
+    top: 40%;
+    left: 42%
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.flexed{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+    margin-bottom: 0;
+
+
+}
+.flexed > section{
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    width: 20%;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+    text-align: center !important;
+    color: goldenrod !important;
+    font-weight: 100;
+    font-size:14px;
+    align-items: center;
+    transition: background-color 0.5s, font 0.5s, box-shadow 0.5s;
+
+}
+.moreDetails{
+    overflow-y: scroll;
+}
+
+.details-planetinfo6 , .details-planetinfo12{
+    padding-bottom: 1rem;
+}
+
+.flexed > section:hover{
+    box-shadow: 0px -5px 15px 10px white;
+    background-color: #E1DEDE;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+   
+}
+.flexed section p{
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.details-active{
+    background-color: #444444 !important;
+}
